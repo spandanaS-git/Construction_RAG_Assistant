@@ -1,0 +1,73 @@
+# ══════════════════════════════════════════════════════════════
+#  .gitignore — Construction Knowledge Assistant (RAG Project)
+# ══════════════════════════════════════════════════════════════
+
+# ── CRITICAL: Environment & Secrets ───────────────────────────
+# Never commit real API keys. Use .env.example as a template.
+.env
+*.env
+.env.*
+!.env.example
+
+# ── Python Cache & Bytecode ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual Environments ───────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.env/
+*.egg-info/
+dist/
+build/
+
+# ── Vector Store (large binary files, rebuild with build_index.py)
+vector_store/
+*.faiss
+*.pkl
+*.index
+
+# ── Data / Source Documents (large PDFs) ──────────────────────
+# Add your own PDFs to data/ locally; do not commit them.
+data/
+*.pdf
+
+# ── Logs & Runtime Output ─────────────────────────────────────
+*.log
+logs/
+*.out
+
+# ── Jupyter Notebooks (if any) ────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE & Editor Files ────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── OS Generated Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── Testing & Coverage ────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Misc ──────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.bak
+*.tmp

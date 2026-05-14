@@ -1,0 +1,42 @@
+❓ Question 1 — TxDOT Bridge Inspection Manual
+"How often should routine bridge inspections be conducted according to TxDOT?"
+
+Why it works: The TxDOT manual (page 35) contains this exact sentence:
+
+"Conduct these inspections every twenty-four months for most bridges, and every forty-eight months for qualifying concrete culverts and span bridges."
+
+The model will retrieve this chunk and answer with the 24-month / 48-month distinction directly.
+
+❓ Question 2 — GTM Construction Safety Manual (Enbridge)
+"What are the Lifesaving Rules in the Enbridge Construction Safety Manual?"
+
+Why it works: Page 11 of the GTM manual lists them explicitly:
+
+"Hazard Management — I will complete a hazard assessment prior to starting work... Ground Disturbance — I will verify the location of buried utilities through surface locating..."
+
+The model retrieves the Lifesaving Rules list and can summarize or quote them directly.
+
+❓ Question 3 — OSHA Construction Safety Guide
+"What are the core elements of a safety and health program in construction according to OSHA?"
+
+Why it works: Page 11 of the OSHA guide has a structured list:
+
+"Management Leadership... Worker Participation... Hazard Identification and Assessment... Hazard Prevention and Control... Education and Training..."
+
+This maps perfectly to the chunk boundaries — the model will list the 6 core elements.
+
+❓ Question 4 — Montana DOT Project Report
+"What were the cleanup levels for lead and arsenic used in the Spring Meadow Lake reclamation project?"
+
+Why it works: Page 7 of the Montana report states exactly:
+
+"Cleanup levels of 400 mg/kg lead and 230 mg/kg arsenic were used to delineate the extent of sediment and soil removal for both the State Park and the MWC."
+
+This is a factual number question — the single best type for small LLMs. The answer is a specific pair of numbers.
+
+❓ Question 5 — WSDOT Construction Manual
+"What is the process for handling contractor disputes and protests under the WSDOT construction contract?"
+
+Why it works: Page 47 of the WSDOT manual states:
+
+"During the course of a Contract, differences of opinion may arise... WSDOT pursues resolution of these differences at the earliest possible time... In all circumstances, the Contractor must continue to proceed with the Work under the Contract."
